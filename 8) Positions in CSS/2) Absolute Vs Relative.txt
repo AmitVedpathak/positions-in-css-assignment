@@ -1,0 +1,22 @@
+1) Relative Positioning:
+
+ *) Relative positioning is the default positioning scheme for HTML elements.
+
+ *) When an element is set to "position: relative," it is positioned relative to its normal position in the document flow. 
+    In other words, the element retains its space in the layout, and the positioning is adjusted relative to that initial position.
+ 
+ *) When you use properties like "top," "right," "bottom," and "left" with relative positioning, 
+    the element is moved from its normal position by the specified amount. However, the space it originally occupied is preserved, and other elements are not affected by the movement.
+ 
+ *) Elements with relative positioning can overlap other elements, but they still occupy space in the document flow.
+
+2) Absolute Positioning:
+
+ *) Absolute positioning takes an element out of the normal document flow, 
+    and its position is defined relative to its nearest positioned ancestor (an ancestor element with a positioning property set to anything other than "static").
+
+ *) Elements with absolute positioning do not occupy space in the layout, and other elements can overlap them. 
+    This makes them suitable for creating overlays, pop-up windows, or other elements that need to be positioned precisely on the page.
+ 
+ *) To use absolute positioning effectively, you often need to set the "top," "right," "bottom," or "left" properties,
+    to specify the exact position of the element relative to its containing element with relative or absolute positioning.

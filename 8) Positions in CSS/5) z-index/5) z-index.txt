@@ -1,0 +1,24 @@
+z-index
+
+z-index is a CSS property that controls the stacking order of elements on a web page in the 
+z-axis, which is the axis that goes from the screen towards the viewer. It is used to determine which elements should appear in front of or behind other elements when they overlap in the layout. Elements with higher z-index values will be placed in front of elements with lower values.
+
+Here are some key points to understand about the z-index property:
+
+1) Stacking Contexts:
+ Each element on a web page creates a stacking context. Stacking contexts are like layers, and elements within the same stacking context are stacked relative to each other. The z-index property is used to control the stacking order within a stacking context.
+
+2) Integer Values: 
+The z-index property accepts integer values, where a higher value indicates a higher position in the stacking order. Negative values are also allowed.
+
+3) Positioned Elements: 
+In order to apply z-index, an element must be positioned. This can be achieved using properties like position: relative, position: absolute, or position: fixed. By default, static-positioned elements have a z-index of "auto."
+
+4) Siblings within the Same Stacking Context: 
+Elements within the same stacking context are stacked according to their z-index values. If two elements are siblings in the same stacking context and one has a higher z-index value, it will appear in front of the one with the lower value.
+
+5) Parent-Child Relationship: 
+Elements within a parent-child relationship also create stacking contexts. Child elements with a higher z-index will appear in front of their parent's content, but still behind the parent element itself.
+
+6) Global Stacking Order: 
+Stacking contexts can be nested, creating a global stacking order. Elements outside of a stacking context may have a z-index relative to other elements outside of that context.
